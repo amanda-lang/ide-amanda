@@ -1,0 +1,57 @@
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.csprojAssemblyReference.cache
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.Form1.resources
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.Properties.Resources.resources
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.csproj.GenerateResource.cache
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.csproj.CoreCompileInputs.cache
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Compilador.exe.config
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Compilador.exe
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Compilador.pdb
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.exe
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.pdb
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\FastColoredTextBox.dll
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Heyech Application Development.dll
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Interop.WMPLib.dll
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Heyech Application Development.pdb
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Heyech Application Development.xml
+C:\Users\alfre\source\repos\Compilador\Compilador\bin\Debug\Heyech Application Development.dll.config
+C:\Users\alfre\source\repos\Compilador\Compilador\obj\Debug\Compilador.csproj.CopyComplete
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Compilador.exe.config
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Compilador.exe
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Compilador.pdb
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\FastColoredTextBox.dll
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.dll
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\AxInterop.WMPLib.dll
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Interop.WMPLib.dll
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.pdb
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.xml
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.dll.config
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csprojAssemblyReference.cache
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.Form1.resources
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.Properties.Resources.resources
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csproj.GenerateResource.cache
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csproj.CopyComplete
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.exe
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.pdb
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.Objetos.TabView.resources
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\HeyechTree.dll
+F:\Meus Documentos\Documentos\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\HeyechTree.pdb
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Compilador.exe.config
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Compilador.exe
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Compilador.pdb
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\HeyechTree.dll
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\AxInterop.WMPLib.dll
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Interop.WMPLib.dll
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.pdb
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.xml
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\Heyech Application Development.dll.config
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\bin\Debug\HeyechTree.pdb
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csprojAssemblyReference.cache
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.Form1.resources
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.Objetos.TabView.resources
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.Properties.Resources.resources
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csproj.GenerateResource.cache
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csproj.CoreCompileInputs.cache
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.csproj.CopyComplete
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.exe
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\Compilador\Compilador\obj\Debug\Compilador.pdb

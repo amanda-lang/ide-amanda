@@ -1,0 +1,16 @@
+/*Eu Sou o Alfredo
+//Ezequiel
+//Vidinhas
+//Vidinhas
+*/
+
+
+int main()
+{
+    
+  for(int i=0; i<10; i++)
+  {
+      printf("Hello Word!!");
+  }
+  
+}
