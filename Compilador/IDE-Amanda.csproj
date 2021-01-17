@@ -41,8 +41,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>F:\Meus Documentos\Documentos\Visual Studio 2013\Projects\Heyech Application Development\Heyech Application Development\bin\Debug\Heyech Application Development.dll</HintPath>
     </Reference>
-    <Reference Include="HeyechTree">
-      <HintPath>..\..\HeyechTree\HeyechTree\bin\Debug\HeyechTree.dll</HintPath>
+    <Reference Include="HeyechTree, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HeyechTree.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
