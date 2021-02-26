@@ -24,3 +24,7 @@ D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compi
 D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\obj\Debug\IDE-Amanda.csproj.CopyComplete
 D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\obj\Debug\Compilador.exe
 D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\obj\Debug\Compilador.pdb
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\bin\Debug\ConsoleControl.dll
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\bin\Debug\ConsoleControlAPI.dll
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\bin\Debug\ConsoleControl.pdb
+D:\Users\Alfredo Vidinhas\Documents\Visual Studio 2015\Projects\IDE-Amanda\Compilador\bin\Debug\ConsoleControlAPI.pdb

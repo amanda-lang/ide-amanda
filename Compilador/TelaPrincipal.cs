@@ -125,7 +125,7 @@ namespace Compilador
                 TabView tv = new TabView();
                 tv.EnderecoDoArquivo = ender;
 
-                tv.code.Text = File.ReadAllText(ender);
+                tv.code.Text = File.ReadAllText(ender, System.Text.Encoding.UTF8);
 
                 tp.Controls.Add(tv);
 

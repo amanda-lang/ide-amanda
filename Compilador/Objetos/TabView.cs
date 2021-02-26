@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Drawing.Text;
 
 namespace Compilador.Objetos
 {
@@ -15,11 +16,17 @@ namespace Compilador.Objetos
             set;
         }
 
-        /* Criar um processo*/
-        private readonly Process Proc = new Process();
+        // Elemento de texto da Console
+        private  RichTextBox ConsoleRich;
 
-        /*Informação usada para iniciar o processo*/
-        private readonly ProcessStartInfo ProcInfo = new ProcessStartInfo();
+        // Caminho do compilador
+        private String CompilerFile = @"amanda.exe";
+
+        //caminho da font
+        private String FontFile = @"assets/fonts/font.ttf";
+
+        // Resize console
+        bool allowResize = false;
 
         public TabView()
         {
@@ -30,72 +37,67 @@ namespace Compilador.Objetos
         {
             this.Dock = DockStyle.Fill;
             this.Location = new Point(0, 0);
-            code.Size = new Size(714, 460);
+            //code.Size = new Size(714, 578);
             code.Location = new Point(2, 17);
 
-            /* Caminho para o executável do compilador de amanda. É só mudar para o caminho aonde vamos por
-        	o executável depois da instalação.*/
-            ProcInfo.FileName = @"amanda.exe";
+            //Pegar a RichTextBox de dentro do console
+            ConsoleRich = consoleControl1.InternalRichTextBox;
+            ConfiguracaoInicialConsole();
+            //UseCustomFont();
+        }
+
+        private void ConfiguracaoInicialConsole()
+        {
+            ConsoleRich.BackColor = Color.FromArgb(19, 17, 54);
+            ConsoleRich.BorderStyle = BorderStyle.None;
+            ConsoleRich.Font = new Font("Segoe UI", 10, FontStyle.Regular);
         }
 
         private void console()
         {
-            console_panel.Height = 200;
+            if(console_panel.Height < 200)
+                console_panel.Height = 200;
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            if (console_panel.Height == 200)
+            if (console_panel.Height >= 200)
                 console_panel.Height = 46;
-            else
+            else if (console_panel.Height < 200)
                 console_panel.Height = 200;
         }
 
         public void Executar()
         {
             console();
-
-            var box = console_text;
-            box.Clear();
-
-            box.SelectionStart = box.TextLength;
-            box.SelectionLength = 0;
-            box.SelectionColor = Color.Gray;
-            box.AppendText("\nIniciando a compilação...\n\n");
-            box.SelectionColor = box.ForeColor;
-
-            // calculo do tempo
-            long t = DateTime.Now.Millisecond;
-
-            File.WriteAllText(EnderecoDoArquivo, code.Text);
-
-
-            /*Caminho para o ficheiro que vai ser executado é passado como argumento. Basta substituir pelo ficheiro que está
-        	aberto na IDE*/
-            ProcInfo.Arguments = EnderecoDoArquivo;
-
-            /*Permitir o redirecionamento do stdout*/
-            ProcInfo.UseShellExecute = false;
-            ProcInfo.RedirectStandardOutput = true;
-            Proc.StartInfo = ProcInfo;
-            Proc.Start();
-
-            /*Ler o stdout do processo. Podemos redirecionar o output para uma outra janela e e.t.c*/
-            String str;
-            /*Isso deveria ser assícrono para ler sempre que houver algo para ler, mas como eu sou um noob em C# vou deixar
-        	isso com vocês (Mestres).*/
-            while ((str = Proc.StandardOutput.ReadLine()) != null)
-                box.AppendText(str + "\n");
-
-
-            long tempo = DateTime.Now.Millisecond - t;
-
-            box.SelectionStart = box.TextLength;
-            box.SelectionLength = 0;
-            box.SelectionColor = Color.Green;
-            box.AppendText("\nTempo de execução: " + tempo + " ms\n\n");
-            box.SelectionColor = box.ForeColor;
+            consoleControl1.ClearOutput();
+            consoleControl1.StartProcess(CompilerFile, EnderecoDoArquivo);
         }
 
+        private void PictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            allowResize = false;
+        }
+
+        private void PictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (allowResize)
+            {
+                this.console_panel.Height = pictureBox1.Top - e.Y;
+               // this.console_panel.Width = pictureBox1.Left + e.X;
+            }
+        }
+
+        private void PictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            allowResize = true;
+        }
+
+        private void UseCustomFont()
+        {
+            PrivateFontCollection modernFont = new PrivateFontCollection();
+            modernFont.AddFontFile(FontFile);
+            ConsoleRich.Font = new Font(modernFont.Families[0], 12, FontStyle.Regular);
+        }
     }
 }
