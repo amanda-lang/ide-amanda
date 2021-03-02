@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="code.Text" xml:space="preserve">
-    <value>// validando um comentario
-/*comentario 2*/
-
-#Fibonacci
-
-
-func fibo(n : int) : int
-
-    se n &lt; 2 entao
-       retorna n
-    fim 
-
-    retorna fibo(n-1) + fibo(n-2)
-fim
-
-mostra fibo(18)
-mostra "Alfredo Lindo"</value>
-  </data>
 </root>
