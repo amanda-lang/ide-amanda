@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabView));
             this.code = new FastColoredTextBoxNS.FastColoredTextBox();
             this.console_panel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.consoleControl1 = new ConsoleControl.ConsoleControl();
             this.console_text = new System.Windows.Forms.RichTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.seta = new System.Windows.Forms.PictureBox();
@@ -41,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.code)).BeginInit();
             this.console_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seta)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +56,7 @@
             this.code.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(54)))));
             this.code.CharHeight = 14;
             this.code.CharWidth = 8;
+            this.code.CommentPrefix = null;
             this.code.CurrentLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
             this.code.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.code.DisabledColor = System.Drawing.Color.Transparent;
@@ -61,12 +65,15 @@
             this.code.ImeMode = System.Windows.Forms.ImeMode.On;
             this.code.IndentBackColor = System.Drawing.Color.Transparent;
             this.code.IsReplaceMode = false;
-            this.code.Language = FastColoredTextBoxNS.Language.CSharp;
-            this.code.LeftBracket = '(';
+            this.code.Language = FastColoredTextBoxNS.Language.HTML;
+            this.code.LeftBracket = '<';
+            this.code.LeftBracket2 = '(';
+            this.code.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(107)))), ((int)(((byte)(123)))));
             this.code.Location = new System.Drawing.Point(0, 0);
             this.code.Name = "code";
             this.code.Paddings = new System.Windows.Forms.Padding(0);
-            this.code.RightBracket = ')';
+            this.code.RightBracket = '>';
+            this.code.RightBracket2 = ')';
             this.code.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.code.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
             this.code.Size = new System.Drawing.Size(720, 469);
@@ -76,6 +83,8 @@
             // 
             // console_panel
             // 
+            this.console_panel.Controls.Add(this.pictureBox1);
+            this.console_panel.Controls.Add(this.consoleControl1);
             this.console_panel.Controls.Add(this.console_text);
             this.console_panel.Controls.Add(this.pictureBox2);
             this.console_panel.Controls.Add(this.seta);
@@ -88,6 +97,33 @@
             this.console_panel.Name = "console_panel";
             this.console_panel.Size = new System.Drawing.Size(720, 46);
             this.console_panel.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(720, 2);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseUp);
+            // 
+            // consoleControl1
+            // 
+            this.consoleControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.consoleControl1.IsInputEnabled = true;
+            this.consoleControl1.Location = new System.Drawing.Point(4, 47);
+            this.consoleControl1.Name = "consoleControl1";
+            this.consoleControl1.SendKeyboardCommandsToProcess = false;
+            this.consoleControl1.ShowDiagnostics = true;
+            this.consoleControl1.Size = new System.Drawing.Size(714, 0);
+            this.consoleControl1.TabIndex = 7;
             // 
             // console_text
             // 
@@ -190,6 +226,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.code)).EndInit();
             this.console_panel.ResumeLayout(false);
             this.console_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seta)).EndInit();
             this.ResumeLayout(false);
@@ -206,5 +243,7 @@
         public System.Windows.Forms.RichTextBox console_text;
         public FastColoredTextBoxNS.FastColoredTextBox code;
         public System.Windows.Forms.Label numerros;
+        public ConsoleControl.ConsoleControl consoleControl1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

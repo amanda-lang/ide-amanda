@@ -43,20 +43,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.buttonTree1 = new HeyechTree.ButtonTree();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.heyechCirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heyechCirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heyechCirclePictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // heyechTabControlDark1
@@ -66,10 +70,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.heyechTabControlDark1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.heyechTabControlDark1.ItemSize = new System.Drawing.Size(0, 30);
-            this.heyechTabControlDark1.Location = new System.Drawing.Point(216, 33);
+            this.heyechTabControlDark1.Location = new System.Drawing.Point(216, 77);
             this.heyechTabControlDark1.Name = "heyechTabControlDark1";
             this.heyechTabControlDark1.SelectedIndex = 0;
-            this.heyechTabControlDark1.Size = new System.Drawing.Size(810, 602);
+            this.heyechTabControlDark1.Size = new System.Drawing.Size(810, 578);
             this.heyechTabControlDark1.TabIndex = 0;
             this.heyechTabControlDark1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HeyechTabControlDark1_MouseDown);
             this.heyechTabControlDark1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HeyechTabControlDark1_MouseMove);
@@ -164,7 +168,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(145)))), ((int)(((byte)(208)))));
-            this.label2.Location = new System.Drawing.Point(29, 44);
+            this.label2.Location = new System.Drawing.Point(126, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 15);
             this.label2.TabIndex = 7;
@@ -175,7 +179,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(145)))), ((int)(((byte)(208)))));
-            this.label3.Location = new System.Drawing.Point(88, 44);
+            this.label3.Location = new System.Drawing.Point(185, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 15);
             this.label3.TabIndex = 8;
@@ -185,7 +189,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(145)))), ((int)(((byte)(208)))));
-            this.label4.Location = new System.Drawing.Point(152, 44);
+            this.label4.Location = new System.Drawing.Point(249, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 15);
             this.label4.TabIndex = 9;
@@ -196,30 +200,27 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox5
+            // panel3
             // 
-            this.pictureBox5.Image = global::Compilador.Properties.Resources.logo3;
-            this.pictureBox5.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(71, 22);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Compilador.Properties.Resources.save;
-            this.pictureBox4.Location = new System.Drawing.Point(76, 46);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(11, 11);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Location = new System.Drawing.Point(-8, 33);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1053, 38);
+            this.panel3.TabIndex = 13;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Compilador.Properties.Resources.open;
-            this.pictureBox3.Location = new System.Drawing.Point(14, 45);
+            this.pictureBox3.Location = new System.Drawing.Point(111, 13);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(14, 11);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -227,16 +228,45 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.Label2_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Compilador.Properties.Resources.save;
+            this.pictureBox4.Location = new System.Drawing.Point(173, 14);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(11, 11);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Compilador.Properties.Resources.executar1;
-            this.pictureBox2.Location = new System.Drawing.Point(139, 45);
+            this.pictureBox2.Location = new System.Drawing.Point(236, 13);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(13, 13);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.Executar_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 658);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1030, 24);
+            this.panel4.TabIndex = 14;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Compilador.Properties.Resources.logo_amanda;
+            this.pictureBox5.Location = new System.Drawing.Point(9, 7);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(39, 22);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
             // 
             // buttonTree1
             // 
@@ -248,29 +278,35 @@
             this.buttonTree1.Location = new System.Drawing.Point(2, 101);
             this.buttonTree1.MyImage = null;
             this.buttonTree1.Name = "buttonTree1";
-            this.buttonTree1.Size = new System.Drawing.Size(217, 528);
+            this.buttonTree1.Size = new System.Drawing.Size(217, 558);
             this.buttonTree1.TabIndex = 4;
             // 
-            // Form1
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(145)))), ((int)(((byte)(208)))));
+            this.label6.Location = new System.Drawing.Point(19, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 15);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Novo arquivo";
+            // 
+            // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(1030, 632);
+            this.ClientSize = new System.Drawing.Size(1030, 682);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonTree1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.heyechTabControlDark1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "TelaPrincipal";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
@@ -282,10 +318,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.heyechCirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.heyechCirclePictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -310,6 +347,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label6;
     }
 }
 
