@@ -71,7 +71,7 @@ namespace Compilador.Objetos
         {
             console();
             consoleControl1.ClearOutput();
-            consoleControl1.StartProcess(CompilerFile, EnderecoDoArquivo);
+            consoleControl1.StartProcess(CompilerFile, "\"" + EnderecoDoArquivo + "\"");
         }
 
         private void PictureBox1_MouseUp(object sender, MouseEventArgs e)

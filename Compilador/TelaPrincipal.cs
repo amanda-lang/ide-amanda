@@ -22,13 +22,15 @@ namespace Compilador
         }
 
         // colocar o formulario com bordas redondas
+        private bool isMaximizaded = false;
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            /*e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
             e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             GraphicsPath path = new GraphicsPath();
             path = Design.RoundedRectPath(0, 0, this.Width, this.Height, 20, 20);
-            this.Region = new Region(path);
+            this.Region = new Region(path);*/
         }
 
         // para se mover o formulario personalisado
@@ -88,13 +90,31 @@ namespace Compilador
             carregarFiles();
         }
 
+        //Verificar se tem um tab aberto
+        private bool VerificarTabs()
+        {
+            var numer = heyechTabControlDark1.RowCount;
+            if (numer > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         //Executar
         public TabView tabCurrent; // cada tabe é idependente e tem a sua propria barra para o console
         private void Executar_Click(object sender, EventArgs e)
         {
-
-            tabCurrent = heyechTabControlDark1.SelectedTab.Controls.OfType<TabView>().FirstOrDefault();
-            tabCurrent.Executar();
+            
+            if (VerificarTabs())
+            {
+                var result = SaveFile();
+                if (result)
+                {
+                    tabCurrent = heyechTabControlDark1.SelectedTab.Controls.OfType<TabView>().FirstOrDefault();
+                    tabCurrent.Executar();
+                }
+            }
 
         }
         // Abrindo um arquivo com o dialog
@@ -131,6 +151,99 @@ namespace Compilador
 
                 label5.Text = Path.GetFileName(ender) + " - Amanda"; // depois passar para ontabchange
 
+            }
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+            if (VerificarTabs())
+            {
+                SaveFile();
+            }
+        }
+
+        private bool SaveFile()
+        {
+            tabCurrent = heyechTabControlDark1.SelectedTab.Controls.OfType<TabView>().FirstOrDefault();
+
+            if (tabCurrent.EnderecoDoArquivo != "" && System.IO.File.Exists(tabCurrent.EnderecoDoArquivo))
+            {
+                System.IO.StreamWriter writer = new System.IO.StreamWriter(tabCurrent.EnderecoDoArquivo); //open the file for writing.
+                writer.Write(tabCurrent.code.Text); //write the current date to the file. change this with your date or something.
+                writer.Close(); //remember to close the file again.
+                writer.Dispose(); //remember to dispose it from the memory.
+                return true;
+            }
+            else
+            {
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.InitialDirectory = @"C:\";
+                saveFileDialog1.Title = "Salvar ficheiro ama";
+                saveFileDialog1.DefaultExt = "ama";
+                saveFileDialog1.Filter = "ama files (*.ama)|*.ama";
+                saveFileDialog1.RestoreDirectory = true;
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    tabCurrent.code.SaveToFile(saveFileDialog1.FileName, System.Text.Encoding.ASCII);
+                    tabCurrent.EnderecoDoArquivo = saveFileDialog1.FileName;
+                    heyechTabControlDark1.SelectedTab.Text = Path.GetFileName(saveFileDialog1.FileName);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+            TabPage tp = new TabPage("Novo Documento");
+            heyechTabControlDark1.TabPages.Add(tp);
+            TabView tv = new TabView();
+            tp.Controls.Add(tv);
+        }
+        
+        private void HeyechCirclePictureBox2_Click(object sender, EventArgs e)
+        {
+            if (isMaximizaded)
+            {
+                Width = 1030;
+                Height = 682;
+                isMaximizaded = false;
+            }
+            else
+            {
+                Left = Top = 0;
+                Width = Screen.PrimaryScreen.WorkingArea.Width;
+                Height = Screen.PrimaryScreen.WorkingArea.Height;
+                isMaximizaded = true;
+            }
+        }
+
+        private void HeyechCirclePictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void PictureBox4_MouseHover(object sender, EventArgs e)
+        {
+            if (VerificarTabs())
+            {
+                pictureBox4.Cursor = label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            }
+            else
+            {
+                pictureBox4.Cursor = label3.Cursor = System.Windows.Forms.Cursors.No;
+            }
+        }
+
+        private void PictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            if (VerificarTabs())
+            {
+                pictureBox2.Cursor = label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            }
+            else
+            {
+                pictureBox2.Cursor = label4.Cursor = System.Windows.Forms.Cursors.No;
             }
         }
     }

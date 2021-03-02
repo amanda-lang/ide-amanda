@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabView));
             this.code = new FastColoredTextBoxNS.FastColoredTextBox();
             this.console_panel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,7 +49,7 @@
             // 
             // code
             // 
-            this.code.AutoScrollMinSize = new System.Drawing.Size(299, 238);
+            this.code.AutoScrollMinSize = new System.Drawing.Size(195, 28);
             this.code.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.code.BackBrush = null;
             this.code.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(54)))));
@@ -61,6 +60,7 @@
             this.code.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.code.DisabledColor = System.Drawing.Color.Transparent;
             this.code.Dock = System.Windows.Forms.DockStyle.Top;
+            this.code.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.code.ForeColor = System.Drawing.Color.White;
             this.code.ImeMode = System.Windows.Forms.ImeMode.On;
             this.code.IndentBackColor = System.Drawing.Color.Transparent;
@@ -78,7 +78,7 @@
             this.code.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
             this.code.Size = new System.Drawing.Size(720, 469);
             this.code.TabIndex = 1;
-            this.code.Text = resources.GetString("code.Text");
+            this.code.Text = "mostra \"Hello Amanda\"\r\n";
             this.code.Zoom = 100;
             // 
             // console_panel
@@ -219,7 +219,6 @@
             this.Controls.Add(this.console_panel);
             this.Controls.Add(this.code);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.MaximumSize = new System.Drawing.Size(720, 520);
             this.Name = "TabView";
             this.Size = new System.Drawing.Size(720, 520);
             this.Load += new System.EventHandler(this.TabView_Load);
