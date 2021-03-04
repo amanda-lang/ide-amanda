@@ -78,6 +78,7 @@
             this.heyechTabControlDark1.SelectedIndex = 0;
             this.heyechTabControlDark1.Size = new System.Drawing.Size(810, 578);
             this.heyechTabControlDark1.TabIndex = 0;
+            this.heyechTabControlDark1.SelectedIndexChanged += new System.EventHandler(this.heyechTabControlDark1_SelectedIndexChanged);
             this.heyechTabControlDark1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HeyechTabControlDark1_MouseDown);
             this.heyechTabControlDark1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HeyechTabControlDark1_MouseMove);
             this.heyechTabControlDark1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.HeyechTabControlDark1_MouseUp);
