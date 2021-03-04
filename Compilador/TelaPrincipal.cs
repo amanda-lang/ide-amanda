@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -23,6 +24,9 @@ namespace Compilador
 
         // colocar o formulario com bordas redondas
         private bool isMaximizaded = false;
+
+        //lista de ficheiros
+        private List<String> listaDeFicheiros = new List<String>();
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
@@ -85,9 +89,17 @@ namespace Compilador
             buttonTree1.Add(btnNode);
         }
 
+        private void addFileNo(string endereco)
+        {
+            var nome = Path.GetFileName(endereco);
+            ButtonNode btnNode = new ButtonNode();
+            btnNode.NodeButton.Texto("main.ama");
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             carregarFiles();
+            heyechTabControlDark1.Selected += new TabControlEventHandler(heyechTabControlDark1_Selected);
         }
 
         //Verificar se tem um tab aberto
@@ -145,8 +157,8 @@ namespace Compilador
                 TabView tv = new TabView();
                 tp.Controls.Add(tv);
                 tv.EnderecoDoArquivo = ender;
-                tv.code.Text = File.ReadAllText(ender, System.Text.Encoding.UTF8);
-                label5.Text = Path.GetFileName(ender) + " - Amanda"; // depois passar para ontabchange
+                tv.code.AppendText(File.ReadAllText(ender, System.Text.Encoding.UTF8));
+                heyechTabControlDark1.SelectedTab = heyechTabControlDark1.TabPages[heyechTabControlDark1.TabCount-1];
             }
         }
 
@@ -180,7 +192,7 @@ namespace Compilador
                 saveFileDialog1.RestoreDirectory = true;
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    tabCurrent.code.SaveFile(saveFileDialog1.FileName);
+                    tabCurrent.code.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
                     tabCurrent.EnderecoDoArquivo = saveFileDialog1.FileName;
                     heyechTabControlDark1.SelectedTab.Text = Path.GetFileName(saveFileDialog1.FileName);
                     return true;
@@ -194,6 +206,7 @@ namespace Compilador
             TabPage tp = new TabPage("Novo Documento");
             heyechTabControlDark1.TabPages.Add(tp);
             TabView tv = new TabView();
+            tv.code.AppendText("mostra \"Hello Amanda\"");
             tp.Controls.Add(tv);
         }
         
@@ -246,6 +259,12 @@ namespace Compilador
         private void heyechTabControlDark1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void heyechTabControlDark1_Selected(object sender, TabControlEventArgs e)
+        {
+            TabView tv = e.TabPage.Controls[0] as TabView;
+            label5.Text = Path.GetFileName(tv.EnderecoDoArquivo) + " - Amanda"; // depois passar para ontabchange
         }
     }
 }

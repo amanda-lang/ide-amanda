@@ -124,6 +124,11 @@ namespace Compilador.Objetos
 
         public void code_TextChanged(object sender, EventArgs e)
         {
+            AplicarRegras();
+        }
+
+        private void AplicarRegras()
+        {
             MatchCollection keywordMatches = Regras.Keywords().Matches(code.Text);
             MatchCollection stringMatches = Regras.String().Matches(code.Text);
             MatchCollection operandsMatches = Regras.Operands().Matches(code.Text);
