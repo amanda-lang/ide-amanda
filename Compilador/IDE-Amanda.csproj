@@ -164,5 +164,11 @@
   <ItemGroup>
     <None Include="Resources\up.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Linter-Amanda\Linter-Amanda.csproj">
+      <Project>{37eb4071-1b63-40da-a4eb-88857cae8ae4}</Project>
+      <Name>Linter-Amanda</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

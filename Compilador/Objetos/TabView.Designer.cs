@@ -28,58 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.code = new FastColoredTextBoxNS.FastColoredTextBox();
             this.console_panel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.consoleControl1 = new ConsoleControl.ConsoleControl();
             this.console_text = new System.Windows.Forms.RichTextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.seta = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numerros = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.code)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.seta = new System.Windows.Forms.PictureBox();
+            this.code = new System.Windows.Forms.RichTextBox();
             this.console_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // code
-            // 
-            this.code.AutoScrollMinSize = new System.Drawing.Size(195, 28);
-            this.code.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.code.BackBrush = null;
-            this.code.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(54)))));
-            this.code.CharHeight = 14;
-            this.code.CharWidth = 8;
-            this.code.CommentPrefix = null;
-            this.code.CurrentLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
-            this.code.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.code.DisabledColor = System.Drawing.Color.Transparent;
-            this.code.Dock = System.Windows.Forms.DockStyle.Top;
-            this.code.Font = new System.Drawing.Font("Courier New", 9.75F);
-            this.code.ForeColor = System.Drawing.Color.White;
-            this.code.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.code.IndentBackColor = System.Drawing.Color.Transparent;
-            this.code.IsReplaceMode = false;
-            this.code.Language = FastColoredTextBoxNS.Language.HTML;
-            this.code.LeftBracket = '<';
-            this.code.LeftBracket2 = '(';
-            this.code.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(107)))), ((int)(((byte)(123)))));
-            this.code.Location = new System.Drawing.Point(0, 0);
-            this.code.Name = "code";
-            this.code.Paddings = new System.Windows.Forms.Padding(0);
-            this.code.RightBracket = '>';
-            this.code.RightBracket2 = ')';
-            this.code.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.code.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
-            this.code.Size = new System.Drawing.Size(720, 469);
-            this.code.TabIndex = 1;
-            this.code.Text = "mostra \"Hello Amanda\"\r\n";
-            this.code.Zoom = 100;
             // 
             // console_panel
             // 
@@ -97,20 +61,6 @@
             this.console_panel.Name = "console_panel";
             this.console_panel.Size = new System.Drawing.Size(720, 46);
             this.console_panel.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(720, 2);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseDown);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseMove);
-            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseUp);
             // 
             // consoleControl1
             // 
@@ -138,29 +88,6 @@
             this.console_text.Size = new System.Drawing.Size(714, 0);
             this.console_text.TabIndex = 6;
             this.console_text.Text = "";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(729, 1);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // seta
-            // 
-            this.seta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.seta.Image = global::Compilador.Properties.Resources.extend;
-            this.seta.Location = new System.Drawing.Point(698, 11);
-            this.seta.Name = "seta";
-            this.seta.Size = new System.Drawing.Size(12, 11);
-            this.seta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.seta.TabIndex = 4;
-            this.seta.TabStop = false;
-            this.seta.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // label4
             // 
@@ -210,6 +137,58 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Erro(s):";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(720, 2);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PictureBox1_MouseUp);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(6)))), ((int)(((byte)(46)))));
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(729, 1);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // seta
+            // 
+            this.seta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.seta.Image = global::Compilador.Properties.Resources.extend;
+            this.seta.Location = new System.Drawing.Point(698, 11);
+            this.seta.Name = "seta";
+            this.seta.Size = new System.Drawing.Size(12, 11);
+            this.seta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.seta.TabIndex = 4;
+            this.seta.TabStop = false;
+            this.seta.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // code
+            // 
+            this.code.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(17)))), ((int)(((byte)(54)))));
+            this.code.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.code.Dock = System.Windows.Forms.DockStyle.Top;
+            this.code.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.code.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.code.Location = new System.Drawing.Point(0, 0);
+            this.code.Name = "code";
+            this.code.Size = new System.Drawing.Size(720, 469);
+            this.code.TabIndex = 3;
+            this.code.Text = "";
+            this.code.TextChanged += new System.EventHandler(this.code_TextChanged);
+            this.code.Enter += new System.EventHandler(this.code_Enter);
+            // 
             // TabView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,7 +201,6 @@
             this.Name = "TabView";
             this.Size = new System.Drawing.Size(720, 520);
             this.Load += new System.EventHandler(this.TabView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.code)).EndInit();
             this.console_panel.ResumeLayout(false);
             this.console_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -240,9 +218,9 @@
         private System.Windows.Forms.PictureBox seta;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.RichTextBox console_text;
-        public FastColoredTextBoxNS.FastColoredTextBox code;
         public System.Windows.Forms.Label numerros;
         public ConsoleControl.ConsoleControl consoleControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.RichTextBox code;
     }
 }

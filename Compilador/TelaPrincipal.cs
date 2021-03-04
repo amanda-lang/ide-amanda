@@ -143,12 +143,9 @@ namespace Compilador
                 TabPage tp = new TabPage(Path.GetFileName(ender));
                 heyechTabControlDark1.TabPages.Add(tp);
                 TabView tv = new TabView();
-                tv.EnderecoDoArquivo = ender;
-
-                tv.code.Text = File.ReadAllText(ender, System.Text.Encoding.UTF8);
-
                 tp.Controls.Add(tv);
-
+                tv.EnderecoDoArquivo = ender;
+                tv.code.Text = File.ReadAllText(ender, System.Text.Encoding.UTF8);
                 label5.Text = Path.GetFileName(ender) + " - Amanda"; // depois passar para ontabchange
 
             }
@@ -184,7 +181,7 @@ namespace Compilador
                 saveFileDialog1.RestoreDirectory = true;
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    tabCurrent.code.SaveToFile(saveFileDialog1.FileName, System.Text.Encoding.ASCII);
+                    tabCurrent.code.SaveFile(saveFileDialog1.FileName);
                     tabCurrent.EnderecoDoArquivo = saveFileDialog1.FileName;
                     heyechTabControlDark1.SelectedTab.Text = Path.GetFileName(saveFileDialog1.FileName);
                     return true;
@@ -245,6 +242,11 @@ namespace Compilador
             {
                 pictureBox2.Cursor = label4.Cursor = System.Windows.Forms.Cursors.No;
             }
+        }
+
+        private void heyechTabControlDark1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OnTextChanged(e);
         }
     }
 }
