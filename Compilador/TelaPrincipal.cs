@@ -147,7 +147,6 @@ namespace Compilador
                 tv.EnderecoDoArquivo = ender;
                 tv.code.Text = File.ReadAllText(ender, System.Text.Encoding.UTF8);
                 label5.Text = Path.GetFileName(ender) + " - Amanda"; // depois passar para ontabchange
-
             }
         }
 
@@ -246,7 +245,7 @@ namespace Compilador
 
         private void heyechTabControlDark1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OnTextChanged(e);
+            
         }
     }
 }
